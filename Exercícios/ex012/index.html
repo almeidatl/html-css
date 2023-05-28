@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos</title>
+</head>
+<body>
+    <h1>Adicionando vídeos em HTML 5</h1>
+    <hr>
+    <ul style="list-style-type: square;">
+        <li>Adicionando vídeos a partir do servidor local</li>
+    </ul>
+    <br>
+    <video poster="imagens/limoes-capa.png" width="560px" controls loop preload="metadata" autoplay>
+        <source src="midia/meuvideo-reduzido.mp4" type="video/mp4">
+        <source src="midia/meu-video.webm" type="video/webm">
+    </video>
+    <p>
+        O vídeo acima foi upado direto de um diretório dentro do meu HD (hospedado localmente) utilizando a tag < video >
+    </p>
+    <p>O autoplay no chrome não costuma funcionar, uma dica é adicionar o parâmetro muted na tag video. <br> No caso, decidi por desativar o recurso do autoplay para que a thumb ficasse visível.
+    </p>
+    <hr>
+    <ul style="list-style-type: square;">
+        <li>Adicionando vídeos a partir de servidores externos</li>
+    </ul>
+    <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <p>
+        O vídeo acima foi upado direto do youtube (hospedagem externa).
+    </p>
+    <hr>
+    <iframe src="https://player.vimeo.com/video/7636697?h=ad4069f09e" width="560" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    <p>O vídeo acima foi upado direto do Vimeo (hospedagem externa)</p>
+    <hr>
+
+</body>
+</html>

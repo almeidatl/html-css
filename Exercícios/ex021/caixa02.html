@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: Helvetica, sans-serif;
+            background-color: lightgray;
+            margin: 0px;
+        }
+
+        header{
+            background-color: black;    
+          
+                     
+        }
+
+        header > h1{
+            display: inline-block;
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 10px;
+            margin-left: 0px;
+            padding: 5px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 3em;
+            background-color: black;
+            color: rgb(52, 105, 52);
+        }
+
+        header > span{
+            color: white;
+            display:none;
+        }
+
+      
+
+        header > nav{
+            background-color: rgb(36, 35, 35);
+            text-align: center;
+            padding: 3px;
+            
+        }
+
+        nav > a{
+            
+            color: whitesmoke;
+            margin-right: 30px;
+            text-decoration: none;            
+        }
+
+        nav > a:hover{
+            color: rgb(52, 105, 52);
+            font-weight: bold;
+        }
+
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 20px 250px;
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 1em;
+
+        }
+
+        #assuntos{
+            background-color: lightgray;
+            padding: 1px 8px 1px 8px;
+            border-radius: 1em;
+            margin-bottom: 10px;
+        }
+
+        #noticias{
+            background-color: lightgray;
+            padding: 1px 8px 1px 8px;
+            border-radius: 1em;
+            
+        }
+
+        article > aside {
+            background-color: rgb(141, 140, 140);
+            padding: 0px 3px ;
+            margin: 0px -8px;
+
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;           
+            margin: 0px;
+            padding: 1px;
+            position: absolute;
+            right: 0%;
+            bottom: 0%;
+            left: 0%
+            
+        }
+
+        footer > p{
+            margin: 5px 0px;            
+        }
+
+        #hover-titulo{
+
+        }
+
+        #redes-sociais{
+            text-align: center;
+            margin: auto;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+            <h1>G - 420</h1>
+            <span>Vamo f1??</span>
+        
+        <nav>
+            <a href="caixa02.html">Home</a>
+            <a href="caixa01.html" target="_blank">Meu Painel</a>
+            <a href="https://www.cnnbrasil.com.br/tudo-sobre/cannabis/" target="_blank">Notícias</a>
+            <a href="https://marola-tabacaria-e-headshop.goomer.app/menu" target="_blank">Loja</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+            <article>
+                <h2>Rumores na brisa</h2>
+                <p>Maconha legalizada? Clique <a href="legaliza.html">aqui</a> para saber mais!</p>
+            </article>
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias canábicas no Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi sunt quia corporis, dicta fugiat porro omnis quisquam quidem quos cumque distinctio et odit fugit, minus doloribus beatae in nihil iusto?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quaerat alias, sequi consequatur quas dignissimos iure officia expedita aut ad, id harum. Sequi iusto unde maiores vitae possimus quia officia?</p>
+                <aside>
+                    <p>Artigo escrito por Ronaldo Alves</p>
+                </aside>
+            </article>
+        </section>
+        
+
+    </main>
+
+    <section id="redes-sociais">
+        <article>
+            <h2>Acesse nossas redes sociais</h2>
+            <nav>
+                <a href="https://instagram.com">
+                    <img src="icones/Instagram/instagramREDONDO.svg" width="48px" alt="">
+                </a>
+                <a href="https://twitter.com">
+                    <img src="icones/Twitter/twitter.svg" width="48px" alt="">
+                </a>
+                <a href="https://facebook.com">
+                    <img src="icones/Facebook/facebook-svgrepo-com.svg" width="48px" alt="">
+                </a>
+                <a href="https://linkedin.com">
+                    <img src="icones/Linkedin/linkedin-round-svgrepo-com.svg" width="48px" alt="">
+                </a>
+            </nav>
+
+        </article>
+    </section>
+
+    <footer>
+        <p>Desenvolvido por Thálisson Almeida</p>
+    </footer>
+    
+</body>
+</html>

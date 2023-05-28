@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <hr>
+    A imagem abaixo deverá sofrer alterações de acordo com o tamanho da tela.
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/foto-P.png" type="image/png">
+        <source media="(max-width: 2000px)" srcset="Imagens/foto-M.png" type="image/png">
+        <img src="Imagens/foto-G.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo áudio em HTML5</h1>
+    <audio preload="metadata" controls autoplay loop>
+        <source src="midia/happymistake.mp3" type="audio/mpeg">
+    </audio>
+    <p>
+        Clique <a href="midia/happymistake.mp3">aqui</a> para baixar a música em seu computador
+    </p>
+
+</body>
+</html>

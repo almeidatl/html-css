@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+body{
+    background-image: radial-gradient(rgb(94, 59, 163),  rgb(12, 0, 0));
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.grade{
+    color: white;
+    background-color: rgb(95, 80, 124);
+    text-decoration: underline;
+}
+
+#topo{
+    border-radius: 50%;
+    width: 100px;
+    
+}
+
+.img-container{
+    text-align: center;
+}
+
+h1#principal{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    background-color: white;
+    
+
+}
+
+h2{
+    color: rgb(62, 102, 62);
+}
+
+.basico{
+    color: rgb(42, 124, 48);
+}
+
+.intermediario{
+    color: rgb(42, 75, 124);
+
+}
+
+.avançado{
+    color: rgb(124, 42, 42);
+
+}
+
+.box1{
+    
+    width: 680px;
+    background-color: white;
+    padding: 1em;
+    border-radius: 5%;
+    margin: auto;
+    box-shadow: 10px 10px 30px;
+    margin-bottom: 3em;
+    margin-top: 4em;
+}
