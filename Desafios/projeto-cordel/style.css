@@ -55,9 +55,16 @@ section.normal{
 }
 
 section.imagem{
+    height: 100vh;
     background-attachment: fixed;
     height: 50vh;
 }
+
+@media only screen and (max-width: 768px) {
+    section.imagem {
+      background-attachment: scroll;
+    }
+  }
 
 section.imagem > p{
     padding: 8px;
