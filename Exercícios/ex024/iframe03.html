@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        iframe{
+            border: 4px solid black;
+            border-radius: 30px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Uso do iframe</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="https://www.github.com/almeidatl" target="_blank">Contato</a></li>
+                <li><a href="#">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+
+    <main class="container">
+        
+        <section class="s1">            
+            <p>Neste exercício, vamos explorar o uso do atributo target="name" em iframes. O atributo target especifica em qual janela ou quadro um link deve ser aberto quando clicado. No caso de iframes, podemos usá-lo para direcionar o link que escolher abaixo para que, em vez de abrir uma nova página, a mesma seja apresentada nesse quadradinho ao lado!</p>
+
+            <ul>
+                <li><a href="pag-extra/page01.html" target="frame">Página azul</a></li>
+                <li><a href="pag-extra/page02.html" target="frame">Página vermelha</a></li>
+                <li><a href="pag-extra/page03.html" target="frame">Página verde</a></li>
+            </ul>
+        </section>
+        <section class="s2">
+            
+            <iframe src="" frameborder="1" name="frame" id="frames"></iframe>
+           
+        </section>
+    </main>
+
+    <footer>
+        <p>Por @almeidatl para o curso HTML 5 e CSS 3</p>
+    </footer>
+</body>
+</html>

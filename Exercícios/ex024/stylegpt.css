@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Monofett&family=Nova+Mono&family=Xanh+Mono:ital@1&display=swap');
+
+:root {
+  --fonte-major: 'Major Mono Display', monospace;
+  --fonte-monofett: 'Monofett', monospace;
+  --fonte-nova: 'Nova Mono', monospace;
+  --fonte-xa: 'Xanh Mono', monospace;
+
+  --cinza1: #4A4E59;
+  --cinza2: #313640;
+  --creme: #BFB2AA;
+  --branco: #F2F2F2;
+  --preto: #0D0D0D;
+}
+
+body {
+  background-color: var(--creme);
+  height: 100vh;
+}
+
+header {
+  background-color: var(--preto);
+  color: var(--cinza1);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.438);
+  margin-bottom: 120px;
+}
+
+header h1 {
+  font-family: var(--fonte-xa);
+  font-size: 3em;
+}
+
+nav ul {
+  list-style: none;
+  display: block;
+  text-align: right;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: var(--cinza1);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #BFB2AA;
+}
+
+main {
+  display: flex;
+  overflow-x: auto;
+  justify-content: space-around;
+  line-height: 2.5em;
+  text-indent: 2.5em;
+}
+
+section.content {
+  font-family: var(--fonte-nova);
+  background-color: #fff;
+  padding: 30px;
+  max-width: 40vw;
+  min-width: 280px;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+ul {
+  display: block;
+  margin-top: 40px;
+}
+
+.content li {
+  list-style: none;
+}
+
+.content a {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+section.s2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.s2 #frames {
+  width: 400px;
+  height: 400px;
+}
+
+footer {
+  font-family: monospace;
+  font-weight: 400;
+  font-size: 1.2em;
+  padding: 10px;
+  background-color: var(--preto);
+  color: white;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.438);
+}
