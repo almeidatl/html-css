@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /*<form action="teste.php">
+        <p>Name: <input type="text" name="nome" id="nome" required></p>
+        <p>Age: <input type="number" name="idade" id="idade" required></p>
+        <p>Gender: <input type="text" name="genero" id="genero" required></p>
+        <p>Adress: <input type="text" name="casa" id="casa" required></p>
+        <p>Zap Zap: <input type="tel" name="" id="" required></p>
+        <p>Email: <input type="email" name="mail" id="mail" required></p>
+        <p>Password: <input type="password" name="senha" id="senha" required></p>
+
+        <input type="submit" value="Enviar">
+    </form>*/
+    
+    body{
+        background-color: blue;
+        width: 100vw;
+        height: 100vh;
+
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        background-color: yellow;
+        align-items: ;
+        
+
+    }
+
+    </style>
+    
+</head>
+<body>
+
+    
+    <h1>Teste de Formulário</h1>
+
+    <form action="teste.php">
+        <div id="nome">
+            <label for="nome">Name: </label>
+            <input type="text" name="nome" id="nome">
+        </div>
+
+        <div id="idade">
+            <label for="idade">Age: </label>
+            <input type="number" name="idade" id="idade">
+        </div>
+
+        <div id="genero">
+            <label for="genero">Gender: </label>
+            <select  name="genero" id="genero">
+                <option value="" required diabled selected></option>
+                <option value="masculino">Male</option>
+                <option value="feminino">Female</option>
+                <option value="nao-binario">Non binary</option>
+                <option value="trans">Trangender</option>
+                <option value="neutro">Gender Neutral</option>
+                <option value="two-spirit">Two Spirit</option>
+                <option value="third-gender">Third-Gender</option>
+                <option value="queer">Gender-Queer</option>
+                <option value="a-gender">Agender</option>
+                <option value="none">None</option>
+                <option value="combination">More than one</option>
+            </select>
+        </div>
+
+        <div id="casa">
+            <label for="casa">Adress: </label>
+            <input type="text" name="casa" id="casa">
+        </div>
+
+        <div id="zap">
+            <label for="zap">Zap-Zap: </label>
+            <input type="tel" name="zap" id="zap">
+        </div>
+
+        <div id="mail">
+            <label for="mail">Mail: </label>
+            <input type="email" name="mail" id="mail">
+        </div>
+    </form>
+    
+</body>
+</html>
