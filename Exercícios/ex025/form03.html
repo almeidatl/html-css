@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    
     <style>
+
+
+    @import url('https://fonts.googleapis.com/css2?family=Agdasima&display=swap');
+    /*font-family: 'Agdasima', sans-serif;*/
+
         *{
             margin: 0;
             padding: 0;
@@ -21,76 +27,134 @@
 
         <input type="submit" value="Enviar">
     </form>*/
+
+    
     
     body{
-        background-color: blue;
+        background-color: rgb(17, 17, 17);
         width: 100vw;
         height: 100vh;
+        display: flex;
+        flex-direction: column;
+        font-family:'Agdasima', sans-serif;
+        justify-content: center;
+        align-items: center;
 
     }
 
-    form{
+    #janela{
         display: flex;
         flex-direction: column;
-        padding: 10px;
-        background-color: yellow;
-        align-items: ;
+        padding: 30px;
+        background-color: rgb(17, 17, 17);
+        min-width: 378px;
+        max-height: 760px;
+        justify-content: space-evenly;
+        align-items: center;
+        
         
 
     }
 
+    form{
+        border: 2px solid green;
+        border-radius: 10px;
+        box-shadow: inset 0px 0px 10px rgba(9, 243, 21, 0.562);
+        font-size: 1.4em;
+        background-color: rgb(17, 17, 17);
+        color: white;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 50px;
+    }
+
+    #buton{
+        font-family:'Agdasima', sans-serif;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    #btn{
+        font-size: 0.7em;
+        padding: 5px;
+        background-color: black;
+        color: white;
+    }
+
+    form > div{
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+    }
+
+    select{
+        width: 176px;        
+    }
+
+    
+
+    
     </style>
     
 </head>
 <body>
 
     
-    <h1>Teste de Formulário</h1>
 
-    <form action="teste.php">
-        <div id="nome">
-            <label for="nome">Name: </label>
-            <input type="text" name="nome" id="nome">
-        </div>
+    <div id="janela">
+        <form action="teste.php" autocomplete="off">
+            <div id="nome">
+                <label for="nome">Name </label>
+                <input type="text" placeholder="How can I adress you?" name="nome" id="nome">
+            </div>
+            <div id="idade" >
+                <label for="idade">Age </label>
+                <input type="number" placeholder="0 to 113" name="idade" id="idade">
+            </div>
+            <div id="genero">
+                <label for="genero">Gender </label>
+                <select name="genero" id="genero">
+                    <option value="" required disabled selected>How do you
+                         identify yourself? </option>
+        
+                    <option value="feminino">Female</option>
+                    <option value="masculino">Male</option>
+                    <option value="nao-binario">Non binary</option>
+                    <option value="trans">Trangender</option>
+                    <option value="neutro">Gender Neutral</option>
+                    <option value="two-spirit">Two Spirit</option>
+                    <option value="third-gender">Third-Gender</option>
+                    <option value="queer">Gender-Queer</option>
+                    <option value="a-gender">Agender</option>
+                    <option value="none">None</option>
+                    <option value="combination">More than one</option>
+        
+                </select>
+            </div>
+            <div id="casa">
+                <label for="casa">Adress </label>
+                <input type="text" placeholder="Where do you live? ;)" name="casa" id="casa">
+            </div>
+            <div id="zap">
+                <label for="zap">Zap-Zap </label>
+                <input type="tel" placeholder="Lança o zap" name="zap" id="zap">
+            </div>
+            <div id="mail">
+                <label for="mail">Mail </label>
+                <input type="email" placeholder="Your e-mail adress" name="mail" id="mail">
+            </div>
 
-        <div id="idade">
-            <label for="idade">Age: </label>
-            <input type="number" name="idade" id="idade">
-        </div>
-
-        <div id="genero">
-            <label for="genero">Gender: </label>
-            <select  name="genero" id="genero">
-                <option value="" required diabled selected></option>
-                <option value="masculino">Male</option>
-                <option value="feminino">Female</option>
-                <option value="nao-binario">Non binary</option>
-                <option value="trans">Trangender</option>
-                <option value="neutro">Gender Neutral</option>
-                <option value="two-spirit">Two Spirit</option>
-                <option value="third-gender">Third-Gender</option>
-                <option value="queer">Gender-Queer</option>
-                <option value="a-gender">Agender</option>
-                <option value="none">None</option>
-                <option value="combination">More than one</option>
-            </select>
-        </div>
-
-        <div id="casa">
-            <label for="casa">Adress: </label>
-            <input type="text" name="casa" id="casa">
-        </div>
-
-        <div id="zap">
-            <label for="zap">Zap-Zap: </label>
-            <input type="tel" name="zap" id="zap">
-        </div>
-
-        <div id="mail">
-            <label for="mail">Mail: </label>
-            <input type="email" name="mail" id="mail">
-        </div>
-    </form>
+            <div id="buton">
+                <input id="btn" type="reset" value="Clear">
+                <input id="btn" type="submit" value="Send">
+            </div>
+        </form>
+    </div>
     
 </body>
 </html>
